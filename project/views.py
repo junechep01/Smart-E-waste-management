@@ -28,6 +28,9 @@ def profile(request):
 def contacts(request):
 	return render(request, 'project/contacts.html', {'title':'Contacts'})
 
+@login_required
+def recycling(request):
+	return render(request, 'project/recycling.html', {'title':'Recycling'})
 
 
 @login_required
